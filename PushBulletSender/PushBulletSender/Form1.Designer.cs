@@ -57,12 +57,39 @@
             this.metroButton3 = new MetroFramework.Controls.MetroButton();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.SearchTimer1 = new System.Windows.Forms.Timer(this.components);
+            this.SearchTimer2 = new System.Windows.Forms.Timer(this.components);
+            this.SearchTimer3 = new System.Windows.Forms.Timer(this.components);
+            this.SearchTimer4 = new System.Windows.Forms.Timer(this.components);
+            this.SearchCB1 = new System.Windows.Forms.CheckBox();
+            this.Search1HTB = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.Search1MTB = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.SearchCB2 = new System.Windows.Forms.CheckBox();
+            this.SearchCB3 = new System.Windows.Forms.CheckBox();
+            this.SearchCB4 = new System.Windows.Forms.CheckBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.Search2MTB = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.Search2HTB = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.Search3MTB = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.Search3HTB = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.Search4MTB = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.Search4HTB = new System.Windows.Forms.TextBox();
+            this.metroButton4 = new MetroFramework.Controls.MetroButton();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPage3.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -305,6 +332,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.groupBox1);
             this.tabPage3.Controls.Add(this.label10);
             this.tabPage3.Controls.Add(this.metroButton3);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
@@ -340,6 +368,245 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // SearchTimer1
+            // 
+            this.SearchTimer1.Interval = 1000;
+            // 
+            // SearchTimer2
+            // 
+            this.SearchTimer2.Interval = 1000;
+            // 
+            // SearchTimer3
+            // 
+            this.SearchTimer3.Interval = 1000;
+            // 
+            // SearchTimer4
+            // 
+            this.SearchTimer4.Interval = 1000;
+            // 
+            // SearchCB1
+            // 
+            this.SearchCB1.AutoSize = true;
+            this.SearchCB1.Checked = true;
+            this.SearchCB1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.SearchCB1.Location = new System.Drawing.Point(23, 27);
+            this.SearchCB1.Name = "SearchCB1";
+            this.SearchCB1.Size = new System.Drawing.Size(82, 16);
+            this.SearchCB1.TabIndex = 2;
+            this.SearchCB1.Text = "탐색시간 1";
+            this.SearchCB1.UseVisualStyleBackColor = true;
+            // 
+            // Search1HTB
+            // 
+            this.Search1HTB.Location = new System.Drawing.Point(137, 25);
+            this.Search1HTB.Name = "Search1HTB";
+            this.Search1HTB.Size = new System.Drawing.Size(41, 21);
+            this.Search1HTB.TabIndex = 3;
+            this.Search1HTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(184, 28);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(17, 12);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "시";
+            // 
+            // Search1MTB
+            // 
+            this.Search1MTB.Location = new System.Drawing.Point(207, 25);
+            this.Search1MTB.Name = "Search1MTB";
+            this.Search1MTB.Size = new System.Drawing.Size(41, 21);
+            this.Search1MTB.TabIndex = 5;
+            this.Search1MTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(254, 28);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(17, 12);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "분";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.metroButton4);
+            this.groupBox1.Controls.Add(this.label15);
+            this.groupBox1.Controls.Add(this.SearchCB4);
+            this.groupBox1.Controls.Add(this.Search4MTB);
+            this.groupBox1.Controls.Add(this.SearchCB2);
+            this.groupBox1.Controls.Add(this.label16);
+            this.groupBox1.Controls.Add(this.SearchCB3);
+            this.groupBox1.Controls.Add(this.Search4HTB);
+            this.groupBox1.Controls.Add(this.SearchCB1);
+            this.groupBox1.Controls.Add(this.label13);
+            this.groupBox1.Controls.Add(this.Search2MTB);
+            this.groupBox1.Controls.Add(this.Search3MTB);
+            this.groupBox1.Controls.Add(this.Search1HTB);
+            this.groupBox1.Controls.Add(this.label14);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.Search3HTB);
+            this.groupBox1.Controls.Add(this.Search1MTB);
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.Search2HTB);
+            this.groupBox1.Controls.Add(this.label12);
+            this.groupBox1.Enabled = false;
+            this.groupBox1.Location = new System.Drawing.Point(408, 16);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(293, 185);
+            this.groupBox1.TabIndex = 7;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "탐색 알림(만드는중)";
+            // 
+            // SearchCB2
+            // 
+            this.SearchCB2.AutoSize = true;
+            this.SearchCB2.Checked = true;
+            this.SearchCB2.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.SearchCB2.Location = new System.Drawing.Point(23, 55);
+            this.SearchCB2.Name = "SearchCB2";
+            this.SearchCB2.Size = new System.Drawing.Size(82, 16);
+            this.SearchCB2.TabIndex = 8;
+            this.SearchCB2.Text = "탐색시간 2";
+            this.SearchCB2.UseVisualStyleBackColor = true;
+            // 
+            // SearchCB3
+            // 
+            this.SearchCB3.AutoSize = true;
+            this.SearchCB3.Checked = true;
+            this.SearchCB3.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.SearchCB3.Location = new System.Drawing.Point(23, 83);
+            this.SearchCB3.Name = "SearchCB3";
+            this.SearchCB3.Size = new System.Drawing.Size(82, 16);
+            this.SearchCB3.TabIndex = 9;
+            this.SearchCB3.Text = "탐색시간 3";
+            this.SearchCB3.UseVisualStyleBackColor = true;
+            // 
+            // SearchCB4
+            // 
+            this.SearchCB4.AutoSize = true;
+            this.SearchCB4.Checked = true;
+            this.SearchCB4.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.SearchCB4.Location = new System.Drawing.Point(23, 110);
+            this.SearchCB4.Name = "SearchCB4";
+            this.SearchCB4.Size = new System.Drawing.Size(82, 16);
+            this.SearchCB4.TabIndex = 10;
+            this.SearchCB4.Text = "탐색시간 4";
+            this.SearchCB4.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(254, 55);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(17, 12);
+            this.label11.TabIndex = 11;
+            this.label11.Text = "분";
+            // 
+            // Search2MTB
+            // 
+            this.Search2MTB.Location = new System.Drawing.Point(207, 52);
+            this.Search2MTB.Name = "Search2MTB";
+            this.Search2MTB.Size = new System.Drawing.Size(41, 21);
+            this.Search2MTB.TabIndex = 10;
+            this.Search2MTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(184, 55);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(17, 12);
+            this.label12.TabIndex = 9;
+            this.label12.Text = "시";
+            // 
+            // Search2HTB
+            // 
+            this.Search2HTB.Location = new System.Drawing.Point(137, 52);
+            this.Search2HTB.Name = "Search2HTB";
+            this.Search2HTB.Size = new System.Drawing.Size(41, 21);
+            this.Search2HTB.TabIndex = 8;
+            this.Search2HTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(254, 82);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(17, 12);
+            this.label13.TabIndex = 15;
+            this.label13.Text = "분";
+            // 
+            // Search3MTB
+            // 
+            this.Search3MTB.Location = new System.Drawing.Point(207, 79);
+            this.Search3MTB.Name = "Search3MTB";
+            this.Search3MTB.Size = new System.Drawing.Size(41, 21);
+            this.Search3MTB.TabIndex = 14;
+            this.Search3MTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(184, 82);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(17, 12);
+            this.label14.TabIndex = 13;
+            this.label14.Text = "시";
+            // 
+            // Search3HTB
+            // 
+            this.Search3HTB.Location = new System.Drawing.Point(137, 79);
+            this.Search3HTB.Name = "Search3HTB";
+            this.Search3HTB.Size = new System.Drawing.Size(41, 21);
+            this.Search3HTB.TabIndex = 12;
+            this.Search3HTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(254, 109);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(17, 12);
+            this.label15.TabIndex = 19;
+            this.label15.Text = "분";
+            // 
+            // Search4MTB
+            // 
+            this.Search4MTB.Location = new System.Drawing.Point(207, 106);
+            this.Search4MTB.Name = "Search4MTB";
+            this.Search4MTB.Size = new System.Drawing.Size(41, 21);
+            this.Search4MTB.TabIndex = 18;
+            this.Search4MTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(184, 109);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(17, 12);
+            this.label16.TabIndex = 17;
+            this.label16.Text = "시";
+            // 
+            // Search4HTB
+            // 
+            this.Search4HTB.Location = new System.Drawing.Point(137, 106);
+            this.Search4HTB.Name = "Search4HTB";
+            this.Search4HTB.Size = new System.Drawing.Size(41, 21);
+            this.Search4HTB.TabIndex = 16;
+            this.Search4HTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // metroButton4
+            // 
+            this.metroButton4.Location = new System.Drawing.Point(82, 144);
+            this.metroButton4.Name = "metroButton4";
+            this.metroButton4.Size = new System.Drawing.Size(144, 35);
+            this.metroButton4.TabIndex = 8;
+            this.metroButton4.Text = "탐색 알림 실행";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -360,6 +627,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -393,6 +662,32 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private MetroFramework.Controls.MetroButton metroButton4;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.CheckBox SearchCB4;
+        private System.Windows.Forms.TextBox Search4MTB;
+        private System.Windows.Forms.CheckBox SearchCB2;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.CheckBox SearchCB3;
+        private System.Windows.Forms.TextBox Search4HTB;
+        private System.Windows.Forms.CheckBox SearchCB1;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox Search2MTB;
+        private System.Windows.Forms.TextBox Search3MTB;
+        private System.Windows.Forms.TextBox Search1HTB;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox Search3HTB;
+        private System.Windows.Forms.TextBox Search1MTB;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox Search2HTB;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Timer SearchTimer1;
+        private System.Windows.Forms.Timer SearchTimer2;
+        private System.Windows.Forms.Timer SearchTimer3;
+        private System.Windows.Forms.Timer SearchTimer4;
     }
 }
 
