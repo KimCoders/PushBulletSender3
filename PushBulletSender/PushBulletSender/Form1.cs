@@ -52,6 +52,8 @@ namespace PushBulletSender
         Graphics GraphicsData = null;
         bool FindEnd = false;
 
+        TimeSpan startTime1, startTime2, startTime3, startTime4;
+
         // PushBullet 메세지용
         public void MsgPush(string Token, string title, string Msg)
         {
@@ -202,7 +204,7 @@ namespace PushBulletSender
                 bmp.Dispose();
             }
         }
-        
+
         public void GetScreen()
         {
             try
@@ -248,7 +250,7 @@ namespace PushBulletSender
                 return;
             };
         }
-        
+
         public void searchIMG1(Bitmap screen_img, Bitmap find_img)
         {
             try
@@ -284,7 +286,7 @@ namespace PushBulletSender
                         GraphicsData.Dispose();
                         bmp.Dispose();
                         screen_img.Dispose();
-                        
+
                     }
                     else
                     {
@@ -292,9 +294,9 @@ namespace PushBulletSender
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                if(ex.Message == "값은 null일 수 없습니다.\r\n매개 변수 이름: accessToken")
+                if (ex.Message == "값은 null일 수 없습니다.\r\n매개 변수 이름: accessToken")
                 {
                     label10.Text = "토큰값을 입력하지 않았습니다.";
                 }
@@ -357,5 +359,120 @@ namespace PushBulletSender
             }
 
         }
+
+        private void metroButton4_Click(object sender, EventArgs e)
+        {
+            startTime1 = new TimeSpan(DateTime.Now.Ticks);
+            SearchTimer1.Start();
+        }
+
+#region 탐색 알람
+
+        private void TimeProcess1(int hh, int mm, TimeSpan starttime)
+        {
+            TimeSpan end = new TimeSpan(starttime.Hours + hh, starttime.Minutes + mm, 0);
+            TimeSpan now = DateTime.Now.TimeOfDay;
+
+            if ((now < starttime) && (now < end))
+            {
+                Timer1LB.Text = (end - now).ToString("hh\\:mm\\:ss");
+            }
+            else
+            {
+                MsgPush(TokenTB.Text, "탐색1 완료", "탐색1 완료");
+                SearchTimer1.Stop();
+            }
+        }
+
+
+        private void TimeProcess2(int hh, int mm, TimeSpan starttime)
+        {
+            TimeSpan end = new TimeSpan(starttime.Hours + hh, starttime.Minutes + mm, 0);
+            TimeSpan now = DateTime.Now.TimeOfDay;
+
+            if ((now < starttime) && (now < end))
+            {
+                Timer2LB.Text = (end - now).ToString("hh\\:mm\\:ss");
+            }
+            else
+            {
+                MsgPush(TokenTB.Text, "탐색2 완료", "탐색2 완료");
+                SearchTimer2.Stop();
+            }
+        }
+
+        private void TimeProcess3(int hh, int mm, TimeSpan starttime)
+        {
+            TimeSpan end = new TimeSpan(starttime.Hours + hh, starttime.Minutes + mm, 0);
+            TimeSpan now = DateTime.Now.TimeOfDay;
+
+            if ((now < starttime) && (now < end))
+            {
+                Timer3LB.Text = (end - now).ToString("hh\\:mm\\:ss");
+            }
+            else
+            {
+                MsgPush(TokenTB.Text, "탐색3 완료", "탐색3 완료");
+                SearchTimer3.Stop();
+            }
+        }
+
+        private void TimeProcess4(int hh, int mm, TimeSpan starttime)
+        {
+            TimeSpan end = new TimeSpan(starttime.Hours + hh, starttime.Minutes + mm, 0);
+            TimeSpan now = DateTime.Now.TimeOfDay;
+
+            if ((now < starttime) && (now < end))
+            {
+                Timer4LB.Text = (end - now).ToString("hh\\:mm\\:ss");
+            }
+            else
+            {
+                MsgPush(TokenTB.Text, "탐색4 완료", "탐색4 완료");
+                SearchTimer4.Stop();
+            }
+        }
+
+        private void SearchTimer1_Tick(object sender, EventArgs e)
+        {
+            TimeProcess1(Convert.ToInt32(Timer1HCB.Text), Convert.ToInt32(Timer1MCB.Text), startTime1);
+        }
+
+        private void metroButton5_Click(object sender, EventArgs e)
+        {
+            startTime2 = new TimeSpan(DateTime.Now.Ticks);
+            SearchTimer2.Start();
+        }
+
+        private void metroButton6_Click(object sender, EventArgs e)
+        {
+            startTime3 = new TimeSpan(DateTime.Now.Ticks);
+            SearchTimer3.Start();
+        }
+
+        private void metroButton7_Click(object sender, EventArgs e)
+        {
+            startTime4 = new TimeSpan(DateTime.Now.Ticks);
+            SearchTimer4.Start();
+        }
+
+        private void SearchTimer2_Tick(object sender, EventArgs e)
+        {
+            TimeProcess2(Convert.ToInt32(Timer2HCB.Text), Convert.ToInt32(Timer2MCB.Text), startTime2);
+        }
+
+        private void SearchTimer3_Tick(object sender, EventArgs e)
+        {
+            TimeProcess3(Convert.ToInt32(Timer3HCB.Text), Convert.ToInt32(Timer3MCB.Text), startTime3);
+        }
+
+        private void SearchTimer4_Tick(object sender, EventArgs e)
+        {
+            TimeProcess4(Convert.ToInt32(Timer4HCB.Text), Convert.ToInt32(Timer4MCB.Text), startTime4);
+        }
+#endregion
+
+
+
     }
 }

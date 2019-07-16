@@ -53,6 +53,32 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Timer4LB = new System.Windows.Forms.Label();
+            this.Timer3LB = new System.Windows.Forms.Label();
+            this.Timer2LB = new System.Windows.Forms.Label();
+            this.Timer1LB = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.Timer4MCB = new System.Windows.Forms.ComboBox();
+            this.Timer4HCB = new System.Windows.Forms.ComboBox();
+            this.Timer3MCB = new System.Windows.Forms.ComboBox();
+            this.Timer3HCB = new System.Windows.Forms.ComboBox();
+            this.Timer2MCB = new System.Windows.Forms.ComboBox();
+            this.Timer2HCB = new System.Windows.Forms.ComboBox();
+            this.Timer1MCB = new System.Windows.Forms.ComboBox();
+            this.metroButton4 = new MetroFramework.Controls.MetroButton();
+            this.Timer1HCB = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.metroButton3 = new MetroFramework.Controls.MetroButton();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
@@ -61,28 +87,13 @@
             this.SearchTimer2 = new System.Windows.Forms.Timer(this.components);
             this.SearchTimer3 = new System.Windows.Forms.Timer(this.components);
             this.SearchTimer4 = new System.Windows.Forms.Timer(this.components);
-            this.SearchCB1 = new System.Windows.Forms.CheckBox();
-            this.Search1HTB = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.Search1MTB = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.SearchCB2 = new System.Windows.Forms.CheckBox();
-            this.SearchCB3 = new System.Windows.Forms.CheckBox();
-            this.SearchCB4 = new System.Windows.Forms.CheckBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.Search2MTB = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.Search2HTB = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.Search3MTB = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.Search3HTB = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.Search4MTB = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.Search4HTB = new System.Windows.Forms.TextBox();
-            this.metroButton4 = new MetroFramework.Controls.MetroButton();
+            this.metroButton5 = new MetroFramework.Controls.MetroButton();
+            this.metroButton6 = new MetroFramework.Controls.MetroButton();
+            this.metroButton7 = new MetroFramework.Controls.MetroButton();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -342,6 +353,612 @@
             this.tabPage3.Text = "3. 실행";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label24);
+            this.groupBox1.Controls.Add(this.label23);
+            this.groupBox1.Controls.Add(this.label22);
+            this.groupBox1.Controls.Add(this.label21);
+            this.groupBox1.Controls.Add(this.metroButton7);
+            this.groupBox1.Controls.Add(this.metroButton6);
+            this.groupBox1.Controls.Add(this.metroButton5);
+            this.groupBox1.Controls.Add(this.Timer4LB);
+            this.groupBox1.Controls.Add(this.Timer3LB);
+            this.groupBox1.Controls.Add(this.Timer2LB);
+            this.groupBox1.Controls.Add(this.Timer1LB);
+            this.groupBox1.Controls.Add(this.label20);
+            this.groupBox1.Controls.Add(this.label19);
+            this.groupBox1.Controls.Add(this.label18);
+            this.groupBox1.Controls.Add(this.label17);
+            this.groupBox1.Controls.Add(this.Timer4MCB);
+            this.groupBox1.Controls.Add(this.Timer4HCB);
+            this.groupBox1.Controls.Add(this.Timer3MCB);
+            this.groupBox1.Controls.Add(this.Timer3HCB);
+            this.groupBox1.Controls.Add(this.Timer2MCB);
+            this.groupBox1.Controls.Add(this.Timer2HCB);
+            this.groupBox1.Controls.Add(this.Timer1MCB);
+            this.groupBox1.Controls.Add(this.metroButton4);
+            this.groupBox1.Controls.Add(this.Timer1HCB);
+            this.groupBox1.Controls.Add(this.label15);
+            this.groupBox1.Controls.Add(this.label16);
+            this.groupBox1.Controls.Add(this.label13);
+            this.groupBox1.Controls.Add(this.label14);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.label12);
+            this.groupBox1.Location = new System.Drawing.Point(313, 16);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(388, 244);
+            this.groupBox1.TabIndex = 7;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "탐색 알림";
+            // 
+            // Timer4LB
+            // 
+            this.Timer4LB.AutoSize = true;
+            this.Timer4LB.Location = new System.Drawing.Point(131, 216);
+            this.Timer4LB.Name = "Timer4LB";
+            this.Timer4LB.Size = new System.Drawing.Size(0, 12);
+            this.Timer4LB.TabIndex = 31;
+            // 
+            // Timer3LB
+            // 
+            this.Timer3LB.AutoSize = true;
+            this.Timer3LB.Location = new System.Drawing.Point(131, 160);
+            this.Timer3LB.Name = "Timer3LB";
+            this.Timer3LB.Size = new System.Drawing.Size(0, 12);
+            this.Timer3LB.TabIndex = 30;
+            // 
+            // Timer2LB
+            // 
+            this.Timer2LB.AutoSize = true;
+            this.Timer2LB.Location = new System.Drawing.Point(130, 105);
+            this.Timer2LB.Name = "Timer2LB";
+            this.Timer2LB.Size = new System.Drawing.Size(0, 12);
+            this.Timer2LB.TabIndex = 29;
+            // 
+            // Timer1LB
+            // 
+            this.Timer1LB.AutoSize = true;
+            this.Timer1LB.Location = new System.Drawing.Point(130, 54);
+            this.Timer1LB.Name = "Timer1LB";
+            this.Timer1LB.Size = new System.Drawing.Size(0, 12);
+            this.Timer1LB.TabIndex = 28;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(21, 216);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(103, 12);
+            this.label20.TabIndex = 27;
+            this.label20.Text = "탐색4 남은 시간 : ";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(21, 160);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(103, 12);
+            this.label19.TabIndex = 26;
+            this.label19.Text = "탐색3 남은 시간 : ";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(21, 105);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(103, 12);
+            this.label18.TabIndex = 25;
+            this.label18.Text = "탐색2 남은 시간 : ";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(21, 54);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(103, 12);
+            this.label17.TabIndex = 24;
+            this.label17.Text = "탐색1 남은 시간 : ";
+            // 
+            // Timer4MCB
+            // 
+            this.Timer4MCB.FormattingEnabled = true;
+            this.Timer4MCB.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59"});
+            this.Timer4MCB.Location = new System.Drawing.Point(203, 185);
+            this.Timer4MCB.Name = "Timer4MCB";
+            this.Timer4MCB.Size = new System.Drawing.Size(45, 20);
+            this.Timer4MCB.TabIndex = 23;
+            this.Timer4MCB.Text = "0";
+            // 
+            // Timer4HCB
+            // 
+            this.Timer4HCB.FormattingEnabled = true;
+            this.Timer4HCB.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"});
+            this.Timer4HCB.Location = new System.Drawing.Point(133, 185);
+            this.Timer4HCB.Name = "Timer4HCB";
+            this.Timer4HCB.Size = new System.Drawing.Size(45, 20);
+            this.Timer4HCB.TabIndex = 22;
+            this.Timer4HCB.Text = "0";
+            // 
+            // Timer3MCB
+            // 
+            this.Timer3MCB.FormattingEnabled = true;
+            this.Timer3MCB.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59"});
+            this.Timer3MCB.Location = new System.Drawing.Point(203, 129);
+            this.Timer3MCB.Name = "Timer3MCB";
+            this.Timer3MCB.Size = new System.Drawing.Size(45, 20);
+            this.Timer3MCB.TabIndex = 21;
+            this.Timer3MCB.Text = "0";
+            // 
+            // Timer3HCB
+            // 
+            this.Timer3HCB.FormattingEnabled = true;
+            this.Timer3HCB.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"});
+            this.Timer3HCB.Location = new System.Drawing.Point(133, 129);
+            this.Timer3HCB.Name = "Timer3HCB";
+            this.Timer3HCB.Size = new System.Drawing.Size(45, 20);
+            this.Timer3HCB.TabIndex = 20;
+            this.Timer3HCB.Text = "0";
+            // 
+            // Timer2MCB
+            // 
+            this.Timer2MCB.FormattingEnabled = true;
+            this.Timer2MCB.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59"});
+            this.Timer2MCB.Location = new System.Drawing.Point(203, 75);
+            this.Timer2MCB.Name = "Timer2MCB";
+            this.Timer2MCB.Size = new System.Drawing.Size(45, 20);
+            this.Timer2MCB.TabIndex = 11;
+            this.Timer2MCB.Text = "0";
+            // 
+            // Timer2HCB
+            // 
+            this.Timer2HCB.FormattingEnabled = true;
+            this.Timer2HCB.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"});
+            this.Timer2HCB.Location = new System.Drawing.Point(133, 75);
+            this.Timer2HCB.Name = "Timer2HCB";
+            this.Timer2HCB.Size = new System.Drawing.Size(45, 20);
+            this.Timer2HCB.TabIndex = 10;
+            this.Timer2HCB.Text = "0";
+            // 
+            // Timer1MCB
+            // 
+            this.Timer1MCB.FormattingEnabled = true;
+            this.Timer1MCB.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59"});
+            this.Timer1MCB.Location = new System.Drawing.Point(203, 25);
+            this.Timer1MCB.Name = "Timer1MCB";
+            this.Timer1MCB.Size = new System.Drawing.Size(45, 20);
+            this.Timer1MCB.TabIndex = 9;
+            this.Timer1MCB.Text = "0";
+            // 
+            // metroButton4
+            // 
+            this.metroButton4.Location = new System.Drawing.Point(277, 25);
+            this.metroButton4.Name = "metroButton4";
+            this.metroButton4.Size = new System.Drawing.Size(101, 35);
+            this.metroButton4.TabIndex = 8;
+            this.metroButton4.Text = "탐색1 알림 실행";
+            this.metroButton4.Click += new System.EventHandler(this.metroButton4_Click);
+            // 
+            // Timer1HCB
+            // 
+            this.Timer1HCB.FormattingEnabled = true;
+            this.Timer1HCB.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"});
+            this.Timer1HCB.Location = new System.Drawing.Point(133, 25);
+            this.Timer1HCB.Name = "Timer1HCB";
+            this.Timer1HCB.Size = new System.Drawing.Size(45, 20);
+            this.Timer1HCB.TabIndex = 8;
+            this.Timer1HCB.Text = "0";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(254, 191);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(17, 12);
+            this.label15.TabIndex = 19;
+            this.label15.Text = "분";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(184, 191);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(17, 12);
+            this.label16.TabIndex = 17;
+            this.label16.Text = "시";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(254, 134);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(17, 12);
+            this.label13.TabIndex = 15;
+            this.label13.Text = "분";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(184, 134);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(17, 12);
+            this.label14.TabIndex = 13;
+            this.label14.Text = "시";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(184, 28);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(17, 12);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "시";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(254, 79);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(17, 12);
+            this.label11.TabIndex = 11;
+            this.label11.Text = "분";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(254, 28);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(17, 12);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "분";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(184, 79);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(17, 12);
+            this.label12.TabIndex = 9;
+            this.label12.Text = "시";
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -371,241 +988,89 @@
             // SearchTimer1
             // 
             this.SearchTimer1.Interval = 1000;
+            this.SearchTimer1.Tick += new System.EventHandler(this.SearchTimer1_Tick);
             // 
             // SearchTimer2
             // 
             this.SearchTimer2.Interval = 1000;
+            this.SearchTimer2.Tick += new System.EventHandler(this.SearchTimer2_Tick);
             // 
             // SearchTimer3
             // 
             this.SearchTimer3.Interval = 1000;
+            this.SearchTimer3.Tick += new System.EventHandler(this.SearchTimer3_Tick);
             // 
             // SearchTimer4
             // 
             this.SearchTimer4.Interval = 1000;
+            this.SearchTimer4.Tick += new System.EventHandler(this.SearchTimer4_Tick);
             // 
-            // SearchCB1
+            // metroButton5
             // 
-            this.SearchCB1.AutoSize = true;
-            this.SearchCB1.Checked = true;
-            this.SearchCB1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.SearchCB1.Location = new System.Drawing.Point(23, 27);
-            this.SearchCB1.Name = "SearchCB1";
-            this.SearchCB1.Size = new System.Drawing.Size(82, 16);
-            this.SearchCB1.TabIndex = 2;
-            this.SearchCB1.Text = "탐색시간 1";
-            this.SearchCB1.UseVisualStyleBackColor = true;
+            this.metroButton5.Location = new System.Drawing.Point(277, 75);
+            this.metroButton5.Name = "metroButton5";
+            this.metroButton5.Size = new System.Drawing.Size(101, 35);
+            this.metroButton5.TabIndex = 32;
+            this.metroButton5.Text = "탐색2 알림 실행";
+            this.metroButton5.Click += new System.EventHandler(this.metroButton5_Click);
             // 
-            // Search1HTB
+            // metroButton6
             // 
-            this.Search1HTB.Location = new System.Drawing.Point(137, 25);
-            this.Search1HTB.Name = "Search1HTB";
-            this.Search1HTB.Size = new System.Drawing.Size(41, 21);
-            this.Search1HTB.TabIndex = 3;
-            this.Search1HTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.metroButton6.Location = new System.Drawing.Point(277, 129);
+            this.metroButton6.Name = "metroButton6";
+            this.metroButton6.Size = new System.Drawing.Size(101, 35);
+            this.metroButton6.TabIndex = 33;
+            this.metroButton6.Text = "탐색3 알림 실행";
+            this.metroButton6.Click += new System.EventHandler(this.metroButton6_Click);
             // 
-            // label8
+            // metroButton7
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(184, 28);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(17, 12);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "시";
+            this.metroButton7.Location = new System.Drawing.Point(277, 185);
+            this.metroButton7.Name = "metroButton7";
+            this.metroButton7.Size = new System.Drawing.Size(101, 35);
+            this.metroButton7.TabIndex = 34;
+            this.metroButton7.Text = "탐색4 알림 실행";
+            this.metroButton7.Click += new System.EventHandler(this.metroButton7_Click);
             // 
-            // Search1MTB
+            // label21
             // 
-            this.Search1MTB.Location = new System.Drawing.Point(207, 25);
-            this.Search1MTB.Name = "Search1MTB";
-            this.Search1MTB.Size = new System.Drawing.Size(41, 21);
-            this.Search1MTB.TabIndex = 5;
-            this.Search1MTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label21.Location = new System.Drawing.Point(12, 28);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(115, 12);
+            this.label21.TabIndex = 35;
+            this.label21.Text = "탐색1 시간 설정 : ";
             // 
-            // label9
+            // label22
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(254, 28);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(17, 12);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "분";
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label22.Location = new System.Drawing.Point(12, 78);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(115, 12);
+            this.label22.TabIndex = 36;
+            this.label22.Text = "탐색1 시간 설정 : ";
             // 
-            // groupBox1
+            // label23
             // 
-            this.groupBox1.Controls.Add(this.metroButton4);
-            this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.SearchCB4);
-            this.groupBox1.Controls.Add(this.Search4MTB);
-            this.groupBox1.Controls.Add(this.SearchCB2);
-            this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.SearchCB3);
-            this.groupBox1.Controls.Add(this.Search4HTB);
-            this.groupBox1.Controls.Add(this.SearchCB1);
-            this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.Search2MTB);
-            this.groupBox1.Controls.Add(this.Search3MTB);
-            this.groupBox1.Controls.Add(this.Search1HTB);
-            this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.Search3HTB);
-            this.groupBox1.Controls.Add(this.Search1MTB);
-            this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.Search2HTB);
-            this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Enabled = false;
-            this.groupBox1.Location = new System.Drawing.Point(408, 16);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(293, 185);
-            this.groupBox1.TabIndex = 7;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "탐색 알림(만드는중)";
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label23.Location = new System.Drawing.Point(12, 132);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(115, 12);
+            this.label23.TabIndex = 37;
+            this.label23.Text = "탐색1 시간 설정 : ";
             // 
-            // SearchCB2
+            // label24
             // 
-            this.SearchCB2.AutoSize = true;
-            this.SearchCB2.Checked = true;
-            this.SearchCB2.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.SearchCB2.Location = new System.Drawing.Point(23, 55);
-            this.SearchCB2.Name = "SearchCB2";
-            this.SearchCB2.Size = new System.Drawing.Size(82, 16);
-            this.SearchCB2.TabIndex = 8;
-            this.SearchCB2.Text = "탐색시간 2";
-            this.SearchCB2.UseVisualStyleBackColor = true;
-            // 
-            // SearchCB3
-            // 
-            this.SearchCB3.AutoSize = true;
-            this.SearchCB3.Checked = true;
-            this.SearchCB3.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.SearchCB3.Location = new System.Drawing.Point(23, 83);
-            this.SearchCB3.Name = "SearchCB3";
-            this.SearchCB3.Size = new System.Drawing.Size(82, 16);
-            this.SearchCB3.TabIndex = 9;
-            this.SearchCB3.Text = "탐색시간 3";
-            this.SearchCB3.UseVisualStyleBackColor = true;
-            // 
-            // SearchCB4
-            // 
-            this.SearchCB4.AutoSize = true;
-            this.SearchCB4.Checked = true;
-            this.SearchCB4.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.SearchCB4.Location = new System.Drawing.Point(23, 110);
-            this.SearchCB4.Name = "SearchCB4";
-            this.SearchCB4.Size = new System.Drawing.Size(82, 16);
-            this.SearchCB4.TabIndex = 10;
-            this.SearchCB4.Text = "탐색시간 4";
-            this.SearchCB4.UseVisualStyleBackColor = true;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(254, 55);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(17, 12);
-            this.label11.TabIndex = 11;
-            this.label11.Text = "분";
-            // 
-            // Search2MTB
-            // 
-            this.Search2MTB.Location = new System.Drawing.Point(207, 52);
-            this.Search2MTB.Name = "Search2MTB";
-            this.Search2MTB.Size = new System.Drawing.Size(41, 21);
-            this.Search2MTB.TabIndex = 10;
-            this.Search2MTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(184, 55);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(17, 12);
-            this.label12.TabIndex = 9;
-            this.label12.Text = "시";
-            // 
-            // Search2HTB
-            // 
-            this.Search2HTB.Location = new System.Drawing.Point(137, 52);
-            this.Search2HTB.Name = "Search2HTB";
-            this.Search2HTB.Size = new System.Drawing.Size(41, 21);
-            this.Search2HTB.TabIndex = 8;
-            this.Search2HTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(254, 82);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(17, 12);
-            this.label13.TabIndex = 15;
-            this.label13.Text = "분";
-            // 
-            // Search3MTB
-            // 
-            this.Search3MTB.Location = new System.Drawing.Point(207, 79);
-            this.Search3MTB.Name = "Search3MTB";
-            this.Search3MTB.Size = new System.Drawing.Size(41, 21);
-            this.Search3MTB.TabIndex = 14;
-            this.Search3MTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(184, 82);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(17, 12);
-            this.label14.TabIndex = 13;
-            this.label14.Text = "시";
-            // 
-            // Search3HTB
-            // 
-            this.Search3HTB.Location = new System.Drawing.Point(137, 79);
-            this.Search3HTB.Name = "Search3HTB";
-            this.Search3HTB.Size = new System.Drawing.Size(41, 21);
-            this.Search3HTB.TabIndex = 12;
-            this.Search3HTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(254, 109);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(17, 12);
-            this.label15.TabIndex = 19;
-            this.label15.Text = "분";
-            // 
-            // Search4MTB
-            // 
-            this.Search4MTB.Location = new System.Drawing.Point(207, 106);
-            this.Search4MTB.Name = "Search4MTB";
-            this.Search4MTB.Size = new System.Drawing.Size(41, 21);
-            this.Search4MTB.TabIndex = 18;
-            this.Search4MTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(184, 109);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(17, 12);
-            this.label16.TabIndex = 17;
-            this.label16.Text = "시";
-            // 
-            // Search4HTB
-            // 
-            this.Search4HTB.Location = new System.Drawing.Point(137, 106);
-            this.Search4HTB.Name = "Search4HTB";
-            this.Search4HTB.Size = new System.Drawing.Size(41, 21);
-            this.Search4HTB.TabIndex = 16;
-            this.Search4HTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // metroButton4
-            // 
-            this.metroButton4.Location = new System.Drawing.Point(82, 144);
-            this.metroButton4.Name = "metroButton4";
-            this.metroButton4.Size = new System.Drawing.Size(144, 35);
-            this.metroButton4.TabIndex = 8;
-            this.metroButton4.Text = "탐색 알림 실행";
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label24.Location = new System.Drawing.Point(12, 188);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(115, 12);
+            this.label24.TabIndex = 38;
+            this.label24.Text = "탐색1 시간 설정 : ";
             // 
             // Form1
             // 
@@ -665,29 +1130,40 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private MetroFramework.Controls.MetroButton metroButton4;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.CheckBox SearchCB4;
-        private System.Windows.Forms.TextBox Search4MTB;
-        private System.Windows.Forms.CheckBox SearchCB2;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.CheckBox SearchCB3;
-        private System.Windows.Forms.TextBox Search4HTB;
-        private System.Windows.Forms.CheckBox SearchCB1;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox Search2MTB;
-        private System.Windows.Forms.TextBox Search3MTB;
-        private System.Windows.Forms.TextBox Search1HTB;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox Search3HTB;
-        private System.Windows.Forms.TextBox Search1MTB;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox Search2HTB;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Timer SearchTimer1;
         private System.Windows.Forms.Timer SearchTimer2;
         private System.Windows.Forms.Timer SearchTimer3;
         private System.Windows.Forms.Timer SearchTimer4;
+        private System.Windows.Forms.ComboBox Timer4MCB;
+        private System.Windows.Forms.ComboBox Timer4HCB;
+        private System.Windows.Forms.ComboBox Timer3MCB;
+        private System.Windows.Forms.ComboBox Timer3HCB;
+        private System.Windows.Forms.ComboBox Timer2MCB;
+        private System.Windows.Forms.ComboBox Timer2HCB;
+        private System.Windows.Forms.ComboBox Timer1MCB;
+        private System.Windows.Forms.ComboBox Timer1HCB;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label Timer4LB;
+        private System.Windows.Forms.Label Timer3LB;
+        private System.Windows.Forms.Label Timer2LB;
+        private System.Windows.Forms.Label Timer1LB;
+        private MetroFramework.Controls.MetroButton metroButton7;
+        private MetroFramework.Controls.MetroButton metroButton6;
+        private MetroFramework.Controls.MetroButton metroButton5;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label21;
     }
 }
 
